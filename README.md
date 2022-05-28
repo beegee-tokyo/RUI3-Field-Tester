@@ -1,6 +1,10 @@
 # RUI3-Field-Tester
 RUI3 based Location tracker that implements the payload format for the [Low Cost LoRaWan Field Tester](https://www.disk91.com/2021/technology/lora/low-cost-lorawan-field-tester/)
 
+For simplification it uses the WisBlock RAK1021 OLED to display the data returned from the backend server.
+
+Setup of LoRaWAN credentials, regional and send frequency data is done over RUI3 AT commands and custom AT commands `AT?` shows a list of all available commands. AT command manual is in the [RAKwireless Documentation Center](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#overview).     
+
 This code is _**Work in progress**_ and far from finished. But it can give a first start how to use RUI3.     
      
 The code compiles on RAK4631. For RAK3172 examples see my other RUI3 examples     

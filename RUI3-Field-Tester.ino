@@ -372,6 +372,7 @@ void gnss_handler(void *)
 		if (found_sensors[OLED_ID].found_sensor)
 		{
 			sprintf(disp_str, "La %.4f Lo %.4f", latitude / 10000000.0, longitude / 10000000.0, altitude / 1000.0);
+			rak1921_add_line(disp_str);
 			sprintf(disp_str, "Ac %.2f S# %d", accuracy, satellites);
 			rak1921_add_line(disp_str);
 		}
