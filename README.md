@@ -7,11 +7,17 @@ The code compiles on RAK4631. For RAK3172 examples see my other RUI3 examples
 
 ----
 
+Information to disk91 Low Cost LoRaWan Field Tester    
+- [Low Cost LoRaWan Field Tester](https://www.disk91.com/2021/technology/lora/low-cost-lorawan-field-tester/)    
+- [Original sources on Github](https://github.com/disk91/WioLoRaWANFieldTester)
+
+----
+
 # Packet data format
 The following Frame format are used: uplink format on port 1:
 | Byte | Usage |
 | --- | --- |
-| 0 - 5 | GSP position see here for details. Decoding see below |
+| 0 - 5 | GSP position see [here](https://www.disk91.com/2015/technology/sigfox/telecom-design-sdk-decode-gps-frame/) for details. Decoding see below |
 | 6 - 7 | Altitude in meters + 1000m ( 1100 = 100m ) |
 | 8 | HDOP * 10 (11 = 1.1) |
 | 9 | Sats in view |
