@@ -391,6 +391,12 @@ void gnss_handler(void *)
 			{
 				send_packet();
 			}
+			else
+			{
+				// If no location found, Helium Mapper and Field Tester do not send data
+				digitalWrite(LED_BLUE, LOW);
+				gnss_active = false;
+			}
 			if (found_sensors[OLED_ID].found_sensor)
 			{
 				sprintf(disp_str, "No valid location found");
