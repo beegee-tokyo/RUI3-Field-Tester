@@ -5,10 +5,9 @@ For simplification it uses the WisBlock RAK1021 OLED to display the data returne
 
 Setup of LoRaWAN credentials, regional and send frequency data is done over RUI3 AT commands and custom AT commands `AT?` shows a list of all available commands. AT command manual is in the [RAKwireless Documentation Center](https://docs.rakwireless.com/RUI3/Serial-Operating-Modes/AT-Command-Manual/#overview).     
 
-This code is _**Work in progress**_ and far from finished. But it can give a first start how to use RUI3.     
-     
-The code compiles on RAK4631. For RAK3172 examples see my other RUI3 examples     
+This code is _**Proof of Concept**_ only. 
 
+# Get the ready to use RAKwireless RAK10701 Field Tester from the [RAKwireless Store](https://store.rakwireless.com/apps/omega-search/?q=RAK10701)
 ----
 
 Information to disk91 Low Cost LoRaWan Field Tester    
@@ -40,4 +39,4 @@ downlink response format on port 2:
 
 The distance is calculated from the GPS position and the hotspot position returned by console meta-data. Under 250m value is 250m, over 32km value is 32km. 0 is considered as invalid response
 
-Example decoders for TTN, Chirpstack and Helium can be found in the folder [decoders](./decoders) ⤴️
+Example decoders for TTN, Chirpstack and Helium can be found in the folder RAKwireless Standardized Payload ==> [RAK10701-FieldTester.js](https://github.com/RAKWireless/RAKwireless_Standardized_Payload) ⤴️
